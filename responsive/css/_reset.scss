@@ -22,6 +22,7 @@ a {
 div#container {
     display: flex;
     flex-direction: column;
+    margin: $general-margin;
 }
 
 div#content {
@@ -31,11 +32,18 @@ div#content {
         flex-direction: row;
         flex-wrap: wrap;
         width: 80vw;
+        margin: $general-margin;
     }
     aside {
         width: 20vw;
+        padding: $general-padding
     }
 }
+
+header {
+    @include flex-container;
+}
+
 article {
     flex: 33.33%;
     div {
@@ -47,6 +55,17 @@ article {
             object-fit: cover;
             object-position: center;
         }
+        h3,p {
+            margin: $general-margin
+        }
     }
+}
+
+footer {
+    @include flex-container;
+    background-color: $dark-foregroud-color;
+    p {
+        color: $light-foreground-color;
+    } 
 }
 
