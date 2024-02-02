@@ -1,11 +1,11 @@
-'use strict'
+JavaScript-tiedosto (script.js);
 
+javascript
+document.getElementById('calculate').addEventListener('click', function() {
+    var age = document.getElementById('age').value;
 
+    var lowerLimit = (220 - age) * 0.65;
+    var upperLimit = (220 - age) * 0.85;
 
-const convert = () => {
-    const Age = document.querySelector('input').value
-    const Limits = Age * 0.65
-    document.querySelector('output').innerHTML = Limits.toFixed(2)
-}
-
-document.querySelector('button').addEventListener('click',convert)
+    document.getElementById('result').innerHTML = "Tavoitesykealue: " + Math.round(lowerLimit) + " - " + Math.round(upperLimit) + " lyöntiä/min";
+});
