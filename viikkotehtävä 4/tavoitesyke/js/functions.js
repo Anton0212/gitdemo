@@ -1,11 +1,14 @@
-JavaScript-tiedosto (script.js);
+function laskeTavoitesyke() {
+    var ika = parseInt(document.getElementById('ika').value);
 
-javascript
-document.getElementById('calculate').addEventListener('click', function() {
-    var age = document.getElementById('age').value;
+    if (isNaN(ika) || ika <= 0) {
+        document.getElementById('tulos').innerHTML = "Syötä kelvollinen ikä.";
+        return;
+    }
 
-    var lowerLimit = (220 - age) * 0.65;
-    var upperLimit = (220 - age) * 0.85;
+    var alaraja = Math.round((220 - ika) * 0.65);
+    var ylaraja = Math.round((220 - ika) * 0.85);
 
-    document.getElementById('result').innerHTML = "Tavoitesykealue: " + Math.round(lowerLimit) + " - " + Math.round(upperLimit) + " lyöntiä/min";
-});
+    document.getElementById('tulos').innerHTML = "Tavoitesykealue: " + alaraja + " - " + ylaraja + " lyöntiä/min";
+}
+
