@@ -1,0 +1,49 @@
+.alcometer {
+    font-family: Arial, sans-serif;
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+  }
+  
+  .input-fields {
+    margin-bottom: 20px;
+  }
+  
+  .input-fields label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-fields input,
+  .input-fields select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .result {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .result p {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  #promilles {
+    font-size: 24px;
+    color: #f00;
+  }
+  
+  #calculate {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
